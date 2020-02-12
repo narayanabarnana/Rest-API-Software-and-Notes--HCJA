@@ -1,0 +1,229 @@
+{
+	"info": {
+		"_postman_id": "60130a96-9b9e-098b-22e1-6f4fd80251d3",
+		"name": "Twitter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://api.twitter.com/1.1/statuses/home_timeline.json",
+			"request": {
+				"auth": {
+					"type": "oauth1",
+					"oauth1": [
+						{
+							"key": "addParamsToHeader",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "addEmptyParamsToSign",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "tokenSecret",
+							"value": "xrSeD4EhBz5ubmLWKyzVb7t12CkpRQm3wVtKywkMFFcxz",
+							"type": "string"
+						},
+						{
+							"key": "token",
+							"value": "421068780-kZgXQr3GImZoEUoUKZiKKXJajKXHxcKhZO77wlAP",
+							"type": "string"
+						},
+						{
+							"key": "consumerSecret",
+							"value": "UvxP0uQS930tncArpncKw4YNSMIKDlrnxMF5GZvu36iVzHABhQ",
+							"type": "string"
+						},
+						{
+							"key": "consumerKey",
+							"value": "1HxV3RV10qvboQ4hkGcdYoCkK",
+							"type": "string"
+						},
+						{
+							"key": "signatureMethod",
+							"value": "HMAC-SHA1",
+							"type": "string"
+						},
+						{
+							"key": "version",
+							"value": "1.0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://api.twitter.com/1.1/statuses/home_timeline.json",
+					"protocol": "https",
+					"host": [
+						"api",
+						"twitter",
+						"com"
+					],
+					"path": [
+						"1.1",
+						"statuses",
+						"home_timeline.json"
+					]
+				},
+				"description": "Get Request to get the tweets"
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.twitter.com/1.1/statuses/update.json",
+			"request": {
+				"auth": {
+					"type": "oauth1",
+					"oauth1": [
+						{
+							"key": "addParamsToHeader",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "addEmptyParamsToSign",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "tokenSecret",
+							"value": "xrSeD4EhBz5ubmLWKyzVb7t12CkpRQm3wVtKywkMFFcxz",
+							"type": "string"
+						},
+						{
+							"key": "token",
+							"value": "421068780-kZgXQr3GImZoEUoUKZiKKXJajKXHxcKhZO77wlAP",
+							"type": "string"
+						},
+						{
+							"key": "consumerSecret",
+							"value": "UvxP0uQS930tncArpncKw4YNSMIKDlrnxMF5GZvu36iVzHABhQ",
+							"type": "string"
+						},
+						{
+							"key": "consumerKey",
+							"value": "1HxV3RV10qvboQ4hkGcdYoCkK",
+							"type": "string"
+						},
+						{
+							"key": "signatureMethod",
+							"value": "HMAC-SHA1",
+							"type": "string"
+						},
+						{
+							"key": "version",
+							"value": "1.0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "status",
+							"value": "I am tweeting from Rest API",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.twitter.com/1.1/statuses/update.json",
+					"protocol": "https",
+					"host": [
+						"api",
+						"twitter",
+						"com"
+					],
+					"path": [
+						"1.1",
+						"statuses",
+						"update.json"
+					]
+				},
+				"description": "POST Request to send the status\t"
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.twitter.com/1.1/statuses/destroy/972468667689574400.json",
+			"request": {
+				"auth": {
+					"type": "oauth1",
+					"oauth1": [
+						{
+							"key": "addParamsToHeader",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "addEmptyParamsToSign",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "tokenSecret",
+							"value": "xrSeD4EhBz5ubmLWKyzVb7t12CkpRQm3wVtKywkMFFcxz",
+							"type": "string"
+						},
+						{
+							"key": "token",
+							"value": "421068780-kZgXQr3GImZoEUoUKZiKKXJajKXHxcKhZO77wlAP",
+							"type": "string"
+						},
+						{
+							"key": "consumerSecret",
+							"value": "UvxP0uQS930tncArpncKw4YNSMIKDlrnxMF5GZvu36iVzHABhQ",
+							"type": "string"
+						},
+						{
+							"key": "consumerKey",
+							"value": "1HxV3RV10qvboQ4hkGcdYoCkK",
+							"type": "string"
+						},
+						{
+							"key": "signatureMethod",
+							"value": "HMAC-SHA1",
+							"type": "string"
+						},
+						{
+							"key": "version",
+							"value": "1.0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://api.twitter.com/1.1/statuses/destroy/972468667689574400.json",
+					"protocol": "https",
+					"host": [
+						"api",
+						"twitter",
+						"com"
+					],
+					"path": [
+						"1.1",
+						"statuses",
+						"destroy",
+						"972468667689574400.json"
+					]
+				},
+				"description": "POST Request to delete the tweet"
+			},
+			"response": []
+		}
+	]
+}
